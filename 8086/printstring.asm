@@ -4,7 +4,7 @@ VIDEOMEM equ 0xb800
 STRINGLEN equ 0xffff
 
 
-section align=16 vstart=0x7c00
+section code align=16 vstart=0x7c00
     mov si,SayHello
     xor di,di;初始化
     call PrintString
